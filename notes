@@ -1,0 +1,120 @@
+/* .hours {
+    width: 15%;
+    height: 15%;
+    font-size: 4rem;
+    font-weight: 100;
+    text-align: center;
+    position: absolute;
+} */
+
+
+/* .hour1 {
+    transform: rotate(30deg);
+
+}
+
+#num1 {
+    transform: rotate(-30deg);
+    transform-origin: 0 5rem;
+    position: absolute;
+}
+
+.hour2 {
+    transform: rotate(60deg);
+}
+
+#num2 {
+    transform: rotate(-60deg);
+    transform-origin: 0 4rem;
+    position: absolute;
+}
+
+.hour3 {
+    transform: rotate(90deg);
+}
+
+#num3 {
+    transform: rotate(-90deg);
+    transform-origin: 0 3rem;
+    position: absolute;
+}
+
+.hour4 {
+    transform: rotate(120deg);
+}
+
+#num4 {
+    transform: rotate(-120deg);
+    transform-origin: 0.5rem 3rem;
+    position: absolute;
+}
+
+.hour5 {
+    transform: rotate(150deg);
+}
+
+#num5 {
+    transform: rotate(-150deg);
+    transform-origin: 0.5rem 2.7rem;
+    position: absolute;
+}
+
+.hour6 {
+    transform: rotate(180deg);
+}
+
+#num6 {
+    transform: rotate(-180deg);
+    transform-origin: 0.8rem 2.2rem;
+    position: absolute;
+}
+
+.hour7 {
+    transform: rotate(210deg);
+}
+
+#num7 {
+    transform: rotate(-210deg);
+    transform-origin: 0.5rem 2.3rem;
+    position: absolute;
+}
+
+.hour8 {
+    transform: rotate(240deg);
+}
+
+#num8 {
+    transform: rotate(-240deg);
+    transform-origin: 1.2rem 2.1rem;
+    position: absolute;
+}
+
+.hour9 {
+    transform: rotate(270deg);
+}
+
+#num9 {
+    transform: rotate(-270deg);
+    transform-origin: 1.2rem 1.3rem;
+    position: absolute;
+}
+
+.hour10 {
+    transform: rotate(300deg);
+}
+
+#num10 {
+    transform: rotate(-300deg);
+    transform-origin: .8rem 1.2rem;
+    position: absolute;
+}
+
+.hour11 {
+    transform: rotate(330deg);
+}
+
+#num11 {
+    transform: rotate(-330deg);
+    transform-origin: .5rem 0.5rem;
+    position: absolute;
+} */

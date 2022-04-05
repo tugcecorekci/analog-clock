@@ -1,0 +1,229 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*starts here*/
+
+* {
+    box-sizing: border-box;
+    --darkColor: black;
+    --lightColor: yellowgreen;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clock {
+    width: 25rem;
+    height: 25rem;
+    border: .8rem solid var(--lightColor);
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+    background-image: url(clock.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.circle {
+    background-color: var(--lightColor);
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 10;
+}
+
+.hand {
+    align-self: flex-end;
+    margin-bottom: 50%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    transform: rotate(0deg);
+    transform-origin: bottom center;
+    position: absolute;
+}
+
+.handHour {
+    background-color: var(--darkColor);
+    height: 22%;
+    width: .9rem;
+    transform: rotate(0deg);
+    z-index: 7;
+}
+
+.handMinute {
+    background-color: var(--darkColor);
+    height: 30%;
+    width: .5rem;
+    transform: rotate(0deg);
+    z-index: 8;
+}
+
+.handSecond {
+    background-color: var(--lightColor);
+    height: 40%;
+    width: .3rem;
+    transform: rotate(0deg);
+    z-index: 9;
+}
+
+@media (min-width: 30rem) {
+    .clock {
+        width: 40rem;
+        height: 40rem;
+    }
+}
+
+@media (min-width: 50rem) {
+    .clock {
+        width: 60rem;
+        height: 60rem;
+    }
+}
