@@ -3,7 +3,6 @@ const handSecond = document.querySelector('.handSecond')
 const handMinute = document.querySelector('.handMinute')
 const handHour = document.querySelector('.handHour')
 
-console.log(date)
 currentTime()
 setInterval(currentTime, 1000)
 
