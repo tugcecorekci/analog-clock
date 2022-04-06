@@ -138,8 +138,10 @@ table {
 
 * {
     box-sizing: border-box;
-    --darkColor: black;
-    --lightColor: yellowgreen;
+    --handColor: black;
+    --minuteColor: yellowgreen;
+    --shadowColor: rgba(203, 204, 201, 0.5);
+    --backgroundColor: ghostwhite;
 }
 
 html {
@@ -148,7 +150,7 @@ html {
 }
 
 body {
-    background-color: ghostwhite;
+    background-color: var(--backgroundColor);
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -157,10 +159,10 @@ body {
 }
 
 .clock {
-    background-color: ghostwhite;
+    background-color: var(--backgroundColor);
     width: 25rem;
     height: 25rem;
-    border: 4px solid ghostwhite;
+    border: 4px solid var(--backgroundColor);
     border-radius: 50%;
     position: relative;
     display: flex;
@@ -171,14 +173,14 @@ body {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    box-shadow: 0 -15px 15px rgba(203, 204, 201, 0.5),
-        inset 0 -15px 15px rgba(203, 204, 201, 0.5),
-        0 10px 25px rgba(203, 204, 201, 0.5),
-        inset 0 10px 25px rgba(203, 204, 201, 0.5);
+    box-shadow: 0 -15px 15px var(--shadowColor),
+        inset 0 -15px 15px var(--shadowColor),
+        0 10px 25px var(--shadowColor),
+        inset 0 10px 25px var(--shadowColor);
 }
 
 .circle {
-    background-color: var(--lightColor);
+    background-color: var(--minuteColor);
     width: 1.3rem;
     height: 1.3rem;
     border-radius: 50%;
@@ -197,7 +199,7 @@ body {
 }
 
 .handHour {
-    background-color: var(--darkColor);
+    background-color: var(--handColor);
     height: 22%;
     width: .9rem;
     transform: rotate(0deg);
@@ -205,7 +207,7 @@ body {
 }
 
 .handMinute {
-    background-color: var(--darkColor);
+    background-color: var(--handColor);
     height: 30%;
     width: .5rem;
     transform: rotate(0deg);
@@ -213,7 +215,7 @@ body {
 }
 
 .handSecond {
-    background-color: var(--lightColor);
+    background-color: var(--minuteColor);
     height: 40%;
     width: .3rem;
     transform: rotate(0deg);
